@@ -1,0 +1,32 @@
+.navbtn{
+	width: 200px;
+	height: 150px;
+}
+
+/*@media only screen : check if device is screen;*/
+/*see if width of the screen is 480 or less*/
+@media only screen and (max-width: 480px){
+	/*if the condition is true->target btn here*/
+	/*if false->next @media query*/
+	.navbtn{
+		background-color: yellow;
+	}
+}
+
+@media only screen and (min-width: 481px){/* check 481 or more*/
+	/*but this can be overwritten by next media query.*/
+	.navbtn{
+		background-color: blue;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	.navbtn{
+		background-color: red;
+	}
+}
+
+/*
+when screen > 1024, 
+it sets color to blue first, and overwrite to be red
+*/

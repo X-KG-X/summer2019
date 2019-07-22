@@ -1,0 +1,41 @@
+body *{
+	outline: 1px solid pink;
+	border: 1px dashed black;
+}
+
+.container{
+	width: 900px;
+	min-height: 500px;
+}
+
+.header{
+	background-color: palegreen;
+	height: 100px;
+}
+
+.nav{
+	width: 30%;
+	background-color: lightblue;
+	height: 500px;
+	display: inline-block;
+}
+
+div.main{
+	height: 500px;
+	display: inline-block;
+	vertical-align: top;
+}
+	div.main div.box {
+		width: 300px;
+		height: 100px;
+		background-color: purple;
+		display: inline-block;
+		padding: 3px;
+	}
+
+.footer{
+	height: 100px;
+	padding: 10px;
+	background-color: red;
+}
+

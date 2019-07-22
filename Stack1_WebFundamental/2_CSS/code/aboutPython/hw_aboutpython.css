@@ -1,0 +1,254 @@
+/** {
+	outline: 1px solid pink;
+	margin: 0;
+	padding: 0; -- different browser behaves diffrently.
+}*/
+
+.container{
+	width: 970px;
+	background-color: #2b5b84;
+	margin: 0 auto;
+	/*padding: 10px;*/
+}
+
+	.container .top{
+		padding: 10px;
+
+	}
+
+		.container .top .image{
+			height: 100px;
+
+		}
+
+		.container .top .searchbar{
+			font-family:  Tahoma, Geneva, sans-serif;
+			/*font-size: 16px;*/
+			display: inline-block;
+			float: right;
+			/*width: 200px;*/
+		}
+			.container .top .searchbar .searchbarp {
+				color: white;
+				margin: 0px;
+				margin-right: 20px;
+				text-align: right;
+				font-size: 14px;
+				/*float: right;*/
+			}
+				.container .top .searchbar .searchbarp .searchbarsize{
+				color: yellow;
+			}
+
+			.container .top .searchbar .searchbardiv{
+				border-radius: 10px;
+				width: 250px;
+				height: 40px;
+				background-color: #595959FF;
+				box-shadow: 3px 3px black;
+				margin-top: 2px;
+				margin-left: 10px;
+			}
+
+			.container .top .searchbar .searchbardiv .search{ 
+				/*margin-left: 20px;*/
+				border-radius: 0px;
+				margin: 7px 3px 5px 30px;
+				width: 150px;
+				height: 20px; /*TODO: CANNOT CHANGE SIZE OF SEARCH BAR*/;
+				font-size: 15px;
+				text-align:center;
+			}
+			.search::placeholder {
+				color: grey;
+			}
+			.container .top .searchbar .searchbardiv .submit{ 
+				background-color: navy;
+				border: 1px solid white; /*use #fff or #eee*/
+				color: white;
+				border-radius: 5px;
+			}
+
+
+	.container .nav{
+		min-height: 300px;
+	}
+
+		.navbar{
+			height: 35px;
+			background-color: #6699ff;
+			margin: 0px 40px;
+			border-radius: 8px;
+			box-shadow: 3px 3px black;
+		}
+			.navbar .navbaritem {
+				list-style-type: none;
+				display: inline-block;
+				padding: 2px;
+				line-height: 30px;
+				margin: 0px 20px;
+			}
+
+				.navbar .navbaritem .navbaritemlink{
+					font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+					font-size: 20px;
+					color: white;
+					text-decoration: none;
+				}
+
+		.navlist{
+			padding: 20px;
+			display: inline-block;
+			margin-left: 60px;
+			text-align: center;
+			list-style-position: inside;
+		}
+
+			.navlist .navlistitem{
+				padding: 3px;
+			}
+				.navlist {
+					list-style: none;
+				}
+				.navlist li:before{
+					content: "\00BB";
+					color: yellow;
+				}
+
+				.navlist .navlistitem .navlistitemlink{
+					color: white;
+					font-size: 18px;
+
+				}
+
+		.navtext{
+			font-family: Arial, Helvetica, sans-serif;
+			width: 650px;
+			margin: 5px;
+			margin-bottom: 20px;
+			display: inline-block;
+			color: white;
+		}
+			.navtext .navtext_p1{
+				/*font-family: Arial, Helvetica, sans-serif;*/
+				font-size: 15px;
+				/*color: white;*/
+				text-align: center;
+
+			}
+
+			.navtext .navtext_p2{
+				/*font-family: Arial, Helvetica, sans-serif;*/
+				font-style: italic;
+				color: yellow;
+				font-size: 18px;
+				text-align: center;
+				margin: 0px;
+				padding: 5px;
+			}
+
+			.navtext .navtext_p3{
+				font-size: 18px;
+				text-align: center;
+				margin: 0px;
+			}
+
+		.navlist, .navtext{
+			vertical-align: top;
+
+		}
+
+
+	.container .main{
+		min-height: 200px;
+		background-color: white;
+		padding: 0px 60px;
+		font-family: Tahoma, Geneva, sans-serif;
+	}
+
+		.container .main .section{
+			width: 400px;
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			margin: 0px 10px;
+		}
+
+		.container .main .sectionp{
+			margin-bottom: 0px;
+		}
+
+		.container .main .section .sectionline{
+			display: block;
+			height: 3px;
+			color: #6699ff;
+			background-color: #6699ff;
+			margin-bottom: 0px;
+		}
+
+		.container .main .section .sectionh3{
+			margin-top: 3px;
+			margin-bottom: 3px;
+		}
+
+		.container .main .section .sectionlistlink{
+
+			color: lightblue;
+			text-decoration: none;
+		}
+
+		.container .main .section .sectionlist{
+			margin-top: 3px;
+		}
+
+	.container .bottom{
+		padding: 40px 150px 10px 150px;
+		/*text-align: center;*/
+		min-height: 40px;
+		text-decoration: none;
+		background-image: linear-gradient(#2b5b84 40%, #4A8FEFFF 90%);
+		opacity: 0.5;
+	}
+
+		.container .bottom .link{
+			font-family: Tahoma, Geneva, sans-serif;
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			margin: 0px 30px;
+		}
+		.container .bottom .copyright{
+			color: white;
+			text-align: center;
+			font-size: 10px;
+		}
+
+.span1{
+	color: lightblue;
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

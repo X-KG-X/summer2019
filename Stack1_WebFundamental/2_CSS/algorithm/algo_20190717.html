@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Algo 2019 0717</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// <!--1. popFront(arr) -->
+		// function popFront(arr) {
+		// 	var newarr = [];
+		// 	for (var i = 1; i < arr.length; i++) {
+		// 		newarr[i] = arr[i]
+		// 	}
+		// 	return (newarr);
+		// }
+		// var arr1 = [3,5,6,7];
+		// console.log(arr1 + " [popFront] => " + popFront(arr1));
+
+		//modify existing array
+		function popFront2(arr) {
+			for (var i = 0; i < arr.length; i++) {
+				arr[i] = arr[i+1];
+			}
+			arr.length--;
+			return (arr);
+		}
+		var arr1 = [3,5,6,7];
+		console.log(arr1 + " [popFront2] => " + popFront2(arr1));
+
+		// <!--2. pushFront<arr, val)-->
+		// function pushFront(arr, val) {
+		// 	var newarr = [];
+		// 	newarr[0] = val;
+		// 	for (var i = 0; i < arr.length; i++) {
+		// 		newarr[i+1] = arr[i];
+		// 	}
+		// 	return (newarr);
+		// }
+		// var arr2 = [5,6,7];
+		// console.log(arr2 + " [pushFront] => " + pushFront(arr2, 3));
+
+		//modify existing array
+		function pushFront2(arr, val) {
+			for (var i = arr.length; i > 0; i--) {
+				arr[i] = arr[i-1];
+			}
+			arr[0] = val;
+			return (arr);
+		}
+		var arr2 = [5,6,7];
+		console.log(arr2 + " [pushFront2] => " + pushFront2(arr2, 3));
+
+		// // <!--3. removeAt(arr, index)-->
+		// function removeAt(arr, index) {
+		// 	var newarr = [];
+		// 	for (var i = 0; i < arr.length; i++) {
+		// 		if (i < index) {
+		// 			newarr[i] = arr[i];
+		// 		} else if (i > index) {
+		// 			newarr[i-1] = arr[i];
+		// 		}
+		// 	}
+		// 	return (newarr)
+		// }
+		// console.log(arr1 + " [removeAt] 0 => " + removeAt(arr1, 0));
+		// console.log(arr1 + " [removeAt] 1 => " + removeAt(arr1, 1));
+		// console.log(arr1 + " [removeAt] 2 => " + removeAt(arr1, 2));
+		// console.log(arr1 + " [removeAt] 3 => " + removeAt(arr1, 3));
+		// console.log(arr1 + " [removeAt] 4 => " + removeAt(arr1, 4));
+
+		//modify existing array
+		function removeAt2(arr, index) {
+			for (var i = index; i < arr.length-1; i++) {
+				arr[i] = arr[i+1];
+			}
+			arr.length--;
+			return (arr);
+		}
+		console.log(arr1 + " [removeAt] 0 => " + removeAt2(arr1, 0));
+		console.log(arr1 + " [removeAt] 1 => " + removeAt2(arr1, 1));
+		// console.log(arr1 + " [removeAt] 2 => " + removeAt2(arr1, 2));
+		// console.log(arr1 + " [removeAt] 3 => " + removeAt2(arr1, 3));
+		// console.log(arr1 + " [removeAt] 4 => " + removeAt2(arr1, 4));
+
+		// // <!--4. insertAt(arr, index, val)-->
+		// function insertAt(arr, index, val) {
+		// 	var newarr = [];
+		// 	for (var i = 0; i < arr.length; i++) {
+		// 		if (i < index) {
+		// 			newarr[i] = arr[i]
+		// 		} else if (i == index) {
+		// 			newarr[i] = val;
+		// 			newarr[i+1] = arr[i];
+		// 		} else {
+		// 			newarr[i+1] = arr[i];
+		// 		}
+		// 	}
+		// 	return (newarr);
+		// }
+		// console.log(arr1 + " [insertAt] 0 => " + insertAt(arr1, 0, 8));
+		// console.log(arr1 + " [insertAt] 1 => " + insertAt(arr1, 1, 8));
+		// console.log(arr1 + " [insertAt] 2 => " + insertAt(arr1, 2, 8));
+		// console.log(arr1 + " [insertAt] 3 => " + insertAt(arr1, 3, 8));
+		// console.log(arr1 + " [insertAt] 4 => " + insertAt(arr1, 4, 8));
+
+		//modify existing array
+		function insertAt2(arr, index, val) {
+			for (var i = arr.length-1; i > index; i--) {
+				arr[i+1] = arr[i];
+			}
+			arr[index] = val;
+			return (arr);
+		}
+		arr1 = [ 3,4,5,6];
+		console.log(arr1 + " [insertAt] 0 => " + insertAt2(arr1, 0, 8));
+		console.log(arr1 + " [insertAt] 1 => " + insertAt2(arr1, 1, 8));
+		console.log(arr1 + " [insertAt] 2 => " + insertAt2(arr1, 2, 5));
+		console.log(arr1 + " [insertAt] 3 => " + insertAt2(arr1, 3, 2));
+		// console.log(arr1 + " [insertAt] 4 => " + insertAt2(arr1, 4, 8));
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,178 @@
+/**{
+	outline: 1px solid pink;
+}*/
+
+div.container{
+	width: 970px;
+	min-height: 500px;
+	background-image: radial-gradient(circle, #9900cc, #33001a);
+
+}
+
+	div.container div.header{
+		height: 50px;
+		background-color: #f0f0f5;
+		padding-left: 10px;
+		vertical-align: top;
+		
+	}
+		div.container div.header .name{
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-size: 25px;
+			color: black;
+			line-height: 50px; /* to center h1 in the header div*/
+			display: inline-block;
+			margin: 0px;
+		}
+
+		div.container div.header .summary{
+			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			font-size: 18px;
+			display: inline-block;
+			line-height: 50px;
+			margin: 0px;
+			float: right;
+			margin-right: 10px;
+		}
+
+		.name, .summary {
+			vertical-align: top;
+		}
+
+	div.container div.about{
+		height: 290px;
+	}
+		div.container div.about .image{
+			height: 250px;
+			margin: 15px;
+			border: 5px solid grey;
+			display: inline-block;
+		}
+
+		div.container div.about div.abouttext{
+			height: 260px;
+			width: 500px;
+			display: inline-block;
+			background-color: #f0f0f5;
+			margin: 15px;
+		}
+
+		.image, .abouttext{
+			vertical-align: top;
+		}
+.sectiontitle{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 18px;
+	/*background-color: grey;*/
+	background-image: linear-gradient(#b3b3cc, #666699, #b3b3cc);
+	color: white;
+	margin: 0px;
+	padding: 5px;
+
+}
+
+			.abouttext .a{
+				color: white;
+				text-decoration: underline;
+			}
+
+			.abouttext .abouttext_p {
+				padding: 5px;
+			}
+
+	div.container div.more{
+		min-height: 400px;
+		/*padding: 10px;*/
+		padding: 7px;
+	}
+		div.container div.more div.uppersection{
+			width: 300px;
+			height: 400px;
+			display: inline-block;
+			background-color: #f0f0f5;
+			margin: 7px 7px 0px 7px;
+			vertical-align: top;
+		}
+
+		.uppersection .sectionimage{
+			width: 300px;
+		}
+
+		.uppersection .sectiontext{
+			padding: 5px;
+			font-size: 14px;
+			font-family: Helvetica, sans-serif;
+			text-align: justify; /* word-spacing within paragraph */
+		}
+
+		div.container div.more div.techsection {
+			width: 300px;
+			height: 240px;
+			display: inline-block;
+			background-color:  #f0f0f5;
+			vertical-align: top;
+			margin: 0px 7px 7px 7px;
+
+		}
+
+.techtitle{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 15px;
+	background-color: grey;
+	margin: 0px;
+	padding: 5px;
+	color: white;
+}
+
+.techimg{
+	width: 50px;
+	margin: 2px;
+}
+
+.techimgs{
+	padding: 4px;
+}
+
+.techlink{
+	background-color: #186726FF;
+	color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 3px 3px grey;
+}
+
+.techbutton{
+	margin-top: 20px;
+	text-align: center;
+
+}
+
+.footer{
+	text-align: center;
+	min-height: 50px;
+	background-color: #f0f0f5;
+}
+
+.plinkimg{
+	width: 20px;
+	margin-right: 3px;
+}
+
+.plink{
+	color: black;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+

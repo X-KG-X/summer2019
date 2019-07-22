@@ -1,0 +1,10 @@
+p{
+	color:blue;
+}
+#important{ /*id as a selector */
+	font-size:36px;
+}
+.info{ /*class as a selector */
+	background-color: green;
+	border:1px solid black;
+}

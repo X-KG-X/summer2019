@@ -1,0 +1,80 @@
+/*CSS <!--PRACTICE CODE FOR BUILDING LAYERS-->*/
+body *{ /* : everything after the body*/
+	/*this is for visualizing what's being built*/
+	outline: 1px solid pink;
+}
+
+div.container{
+	width:980px;
+	min-height:800px;
+	background-color: blue;
+	margin: 0px auto; /*this puts container in the middle*/
+}
+
+	div.container div.top{ /*div.top inside div.container*/
+		/*default is block. okay*/
+		min-height:100px;
+		background-color: red;
+	}
+		div.container div.top div.image{
+			width:400px;
+			/*div is block as default -> need to change to inline-block*/
+			display: inline-block;
+		}
+		div.container div.top ul{
+			display:inline-block;
+		}
+
+		div.container div.top ul li{
+			display:inline-block;
+			font-size: 24px;
+			padding: 10px;
+		}
+
+	div.container div.h1{
+		text-align: center; /*center the text*/
+
+	}
+
+	div.container div.bottom{
+		min-height: 400px;
+		background-color: green;
+	}
+		div.container div.bottom div.message { /*can skip div.bottom,..*/
+			display: inline-block;
+			vertical-align: top /* lineup on the top even if it's different length*/
+			width: 292px;
+			padding: 10px;
+			margin: 5px;
+			background-color: pink;
+			min-height: 300px;
+			text-align: center;
+		}
+
+		div.container div.message div.image{
+			height:90px;
+
+		}
+
+		div.container div.message a{
+			display:block; /*a takes the whole space*/
+			background-color: orange;
+			padding:10px;
+			border :1px solid black;
+			color: white;
+			text-decoration: none; /*remove underline*/
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

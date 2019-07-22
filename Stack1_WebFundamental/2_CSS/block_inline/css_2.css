@@ -1,0 +1,17 @@
+p{
+	background-color: grey;
+	display: inline;
+/*	display: block;*/
+}
+a{
+	background-color: yellow;
+	/*display: block;*/
+}
+ul{
+	background-color: blue;
+	display: inline;
+}
+ul li{
+	background-color: green;
+	display: inline;
+}

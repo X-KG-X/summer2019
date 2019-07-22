@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Running JavaScript in HTML</title>
+		<script type="text/javascript">
+			// <!--console.log("3");-->
+			// 1. 
+			// function multiply(x,y) {
+			// 	console.log(x);
+			// 	console.log(y);
+			// }
+			// b = multiply(2, 3);
+			// console.log(b);
+
+			//2. 
+			// function multiply(x,y){
+			//     return x*y;
+			// }
+			// b = multiply(2,3);
+			// console.log(b);
+			// console.log(multiply(5,2));
+
+			//3.
+			// var x = [1,2,3,4,5,10];
+			// for(var i=0; i<5; i++)
+			// {
+			//    i = i + 3; 
+			//    console.log(i);
+			// }
+
+			//4.
+			// var x=15;
+			// console.log(x);
+			// function awesome(){
+			//     var x=10;
+			//     console.log(x);
+			// }
+			// console.log(x);
+			// awesome();
+			// console.log(x);
+
+			// //5.
+			// for(var i=0; i<15; i+=2){
+			//    console.log(i);
+			// }
+
+			// //6.
+			// for(var i=0; i<3; i++){
+			//    for(var j=0; j<2; j++){       
+			//        console.log(i*j);
+			//    }
+			// }
+
+			//7.
+			// function looping(x,y){
+			//    for(var i=0; i<x; i++){
+			//       for(var j=0; j<x; j++){         
+			//           console.log(i*j);
+			//       } 
+			//    }
+			// }
+			// z = looping(3,3);
+			// console.log(z);
+
+			//8.
+			// function looping(x,y){
+			//    for(var i=0; i<x; i++){
+			//       for(var j=0; j<y; j++){         
+			//          console.log(i*j);
+			//       } 
+			//    }
+			//    return x*y;
+			// }
+			// z = looping(3,5);
+			// console.log(z);
+
+			//part2_1
+			// function printUpTo(x){
+			// 	// your code here
+			// 	if (x <= 0) {
+			// 		console.log("negative number");
+			// 		return false;
+			// 	}
+			// 	for (var i = 1; i <= x; i++) {
+			// 		console.log(i);
+			// 	}
+			// }
+			// printUpTo(1000); // should print all the integers from 1 to 1000
+			// y = printUpTo(-10); // should return false
+			// console.log(y); // should print false
+
+			//part2_2
+			// function printSum(x){
+			//   var sum = 0;
+			//   //your code here
+			//   for (var i = 0; i <= x; i++) {
+			//   	sum+=i;
+			//   	console.log(i + ", sum:" + sum);
+			//   }
+			//   return sum;
+			// }
+			// y = printSum(255); // should print all the integers from 0 to 255 and with each integer print the sum so far.
+			// console.log(y) ;// should print 32640
+
+			//part2_3
+			// function printSumArray(x){
+			//   var sum = 0;
+			//   for(var i=0; i<x.length; i++) {
+			//     //your code here
+			//     sum+=x[i];
+			//   }
+			//   return sum;
+			// }
+			// console.log( printSumArray([1,2,3]) ); // should log 6
+
+			//bonus
+			function largestElement(arr) {
+				if (arr.length == 0) {
+					console.log("It's an empty array");
+					return;
+				} 
+
+				var max = arr[0];
+				for (var i = 1; i < arr.length; i++) {
+					var e = arr[i];
+					if (e > max) {
+						max = e;
+					}
+				}
+				return max;
+			}
+			var largestEle = largestElement([1,-3,2,8,4]);
+			console.log("the largest element is : " + largestEle);
+			var largestEle = largestElement([]);
+			console.log("the largest element is : " + largestEle);
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+1. ls
+2. cd
+	- cd .. : go upper directory
+	- cd [path] : go to [path]
+	- cd - : go to previous directory
+3. mkdir : make a directory
+4. rm -rf : remove folder 
+	: remove 
+	: -rf : recursive force
+5. rm : remove file
+6. touch : to create a file
+7. code . : open visual studio at .(the current directory)
+
+//for mac:
+try with iteerm2/oh my zsh

@@ -1,0 +1,157 @@
+<!--heading tags-->
+<!DOCTYPE HTML> <!-- !DOCTYPE is an instruction to the web browser about what version of HTML the page is written in. -> HTML5 -->
+<html>
+	<head>
+		<title>Coding Dojo: Coding Bootcamp in Seattle and San Francisco</title>
+<meta name="description" content="Coding Dojo Founder, Michael Choi, developed and refined the dynamic learning curriculum after years of hands-on experience as an executive in fast growing..."><br>
+	</head>
+	<body>
+		<h1>Important tag!</h1>
+		<h2>H2</h2>
+		<h3>H3</h3>
+		<p>Hello World!</p>
+		<img src="http://lorempixel.com/100/100" alt="an image" height=100 width=100> <!-- standalone tag. alt : in case error-->
+		<a href="http://codingdojo.com">Coding Dojo</a><!--link tag-->
+		<ol> <!--ordered list-->
+			<li>list items</li>
+			<li>list item</li>
+		</ol>
+
+		<ul> <!--unordered list-->
+			<li>list items</li>
+			<li>list item</li>
+		</ul>
+		<table>
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+				</tr>
+				<tr>
+					<th>TB2</th>
+					<th>TB2</th>
+					<th>TB2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Hayoung</td>
+					<td>Seo</td>
+					<td>suhha987@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Hee Yoon</td>
+					<td>Lee</td>
+					<td>hylee</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<form>
+			<label for="first_name">First Name:</label>
+			<input type="text" id="first_name" name="first_name">
+			<label for="last_name">Last Name:</label>
+			<input type="text" id="last_name" name="last_name">
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email">
+
+			<!--input type : password-->
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password">
+			<br><br><br>
+			<!--radio button : choose 1-->
+
+			<p1>Select Gender:</p1>
+			<label for="male">Male</label>
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="female">Female</label>
+			<input type="radio" id="female" name="female" value="female">
+			<br><br><br>
+
+			<!--select/option-->
+			<select name="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="decline">Prefer not to say</option>
+			</select>
+			<br><br><br>
+
+			<!--checkbox : choose multiple-->
+			<label for="blue">Blue</label>
+			<input type="checkbox" id="blue" name="color" value="blue">
+			<label for="red">Red</label>
+			<input type="checkbox" id="red" name="color" value="red">
+			<br><br><br>
+
+			<!--longer text-->
+			<textarea name="description"></textarea>
+			<br><br><br>
+
+			<!-- when a form needs to submit more than just user input-->
+			<input type="hidden" name="id" value="7">
+			<input type="submit" value="Submit">
+			<br><br><br><br>
+		</form>
+
+		<!--
+		<form>    
+		    <p>Please Register</p>
+		    <label>
+		        Name:<input type="text" name="name">
+		    </label>
+		    <p>Select your gender:</p>
+		    <label>
+		       Male<input type="radio" name="gender" value="male"> 
+		    </label>
+		    <label>
+		       Female<input type="radio" name="gender" value="female">
+		    </label>
+		    <label>
+		       Prefer not to say<input type="radio" name="gender" value="decline">
+		    </label>
+		    <p>For security, enter your password.</p>
+		    <label>
+		        Password:<input type="password" name="password">
+		    </label>
+		    <input type="submit" value="Click here to register">
+		</form>
+		-->
+		<form>
+			<p>Please Register</p>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name">
+
+< 			<p>Select your gender:</p><br>
+			<label>Female
+			<input type="radio" name= "gender" value="female">
+			</label>
+
+			<label>Male
+			<input type="radio" name= "gender" value="male">
+			</label>
+
+			<label>Prefer not to say
+			<input type="radio" name= "gender" value="not to say">
+			</label>
+			<br>
+			<p>For security, enter your password.</p>
+			<label for="password">Password:</label>
+			<input type="text" id="password" name="password">
+
+			<input type="submit" id="submit" value="Click here to register">
+
+
+
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
