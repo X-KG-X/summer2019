@@ -1,0 +1,137 @@
+<!--WHERE TO WRITE JQUERY-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Demo</title>
+		<!-- copy from https://developers.google.com/speed/libraries/#libraries-->
+		<!-- javascript code in ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js 
+			=> use this as a library-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+			
+		</script>
+
+		<!--JQuery position (2.) USE THIS POSITION!! --> 
+		<!-- <script> -->
+		<script type="text/javascript">
+			console.log($);
+			console.log($());
+			$('h1').html('hello'); //not working because it was run this before h1 in the body 
+			$(document).ready(function(){ // run when the document is ready!
+				// -> javascript interpreter waits until the document is ready.
+				console.log('document is ready');
+				$('h1').html('hello'); 
+				$('h1').click(function(){
+					console.log('h1 is clicked');
+					$('p').toggle();
+				})
+				//get value
+				var a = $('h1').html();
+				console.log(a);
+				//access by id
+				$('#btn_fade').click(function(){
+					$('p.sp').hide();
+				})
+
+				//text, append => manipulation methods
+				//hover : can take two functions?
+				// $('h1').hover(function(){
+				// 	$('h2').text('ho see the Space Needle!');
+				// }, function() {alert('now invoking the second function!')});
+
+				//append to .append class
+				$('.append').click(function(){
+					$('.result').append('<h4>.append adds HTML! </h4>');
+				})
+
+				//.css method
+				// when button is clicked, change the css property of background-color to yellow
+				$('button').click(function(){
+					$('button').css('background-color', 'yellow'); // can do this to andyhing that has css property. if no property -> will add those properties
+					//study .css() method at api.jquery.com/css/
+				})
+
+				//select all the buttons with class name blue
+				$('button.blue');
+
+				//select all the buttons AND elements with class blue
+				$('button, .blue');
+
+				//select by id
+				$('#id1');
+
+				var dojo = ['3','2'];
+				console.log(dojo);
+
+				//inspect - Event Listeners shows jQuerys => try!
+
+				//getter function gets the value of something
+				var myText = $('#myParagraph').text();
+				// alert(myText);
+				// console.log("my text : " + myText);
+
+				//setter function sets the value of something
+				$('button').click(function(){
+					$('#myParagraph').text('see how I .text() works as a setter!')
+				})
+
+				//console.dir
+				console.dir(document);
+				console.dir(document.URL);
+
+				// check difference of result
+				console.log(document.getElementById('h1'));
+				console.dir(document.getElementById('h1'));
+
+				//raw javascript
+				var pTag = document.getElementById('myParagraph');
+				pTag.style.backgroundColor = "green";
+
+				//event listener
+				// var btn = document.getElementById('btn');
+				// btn.addEventListener("click", function() {
+				// 	//add event listener
+				// 	alert("hello");
+				// }); 
+
+				$('#btn').click(function() {
+					// alert("jquery alert");
+					$('#btn').css('backgroundColor', 'purple');
+				})
+
+			})
+		</script>
+	</head>
+	<body>
+		<h1>Coding Dojo</h1>
+		<!--JQuery position (1. right before the body closes : run faster)-->
+		<script>
+			$('h1').html('Michael');
+		</script>
+		<h2>Change this</h2>
+
+		<p id="myParagraph">fa fdfsdfsd
+		</p>
+		<button id = "btn" class="append">Click to see .append work!</button>
+		<p class="result">Result here</p>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

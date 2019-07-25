@@ -1,0 +1,24 @@
+*{
+	outline: 1px solid pink;
+}
+
+.container{
+	width: 500px;
+	min-height: 600px;
+	background-color: #C6FF64FF;
+}
+.section{
+	text-align: center;
+}
+
+.summary{
+	display: inline-block;
+}
+
+.btn{
+	margin: 30px;
+}
+
+.btn_blue{
+	background-color: blue;
+}

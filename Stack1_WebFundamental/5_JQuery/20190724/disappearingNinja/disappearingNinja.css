@@ -1,0 +1,34 @@
+* {
+	outline: 1px solid pink;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 700px;
+	min-width: 400px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.koalaimg{
+	/*background: url('koala.jpg');*/
+	/*background-repeat: no-repeat;*/
+	background-position: center;
+	/*background-size: cover;*/
+	width: 90px;
+	/*height: 80px;*/
+	margin: 10px 30px;
+}
+
+.btn{
+	background-color: green;
+	color: white;
+	display: block;
+	margin-left : 80px;
+	padding: 5px 10px;
+	font-size: 20px;
+}

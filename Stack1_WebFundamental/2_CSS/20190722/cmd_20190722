@@ -1,4 +1,6 @@
 1. ls
+	- ls -al : shows hidden files / version control?
+	- ls -al ~/.ssh : search file ending with .ssh
 2. cd
 	- cd .. : go upper directory
 	- cd [path] : go to [path]
