@@ -1,0 +1,48 @@
+* {
+	outline: 1px solid pink;
+}
+
+* {
+	margin : 0;
+	padding: 0;
+}
+
+.container{
+	width: 850px;
+	min-height: 400px;
+	color: grey;
+	margin : 0 auto;
+	text-align: center;
+}
+
+.imgdiv {
+	/*width: 100px;*/
+	/*width: 100px;*/
+	/*height: 150px;*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+}
+
+.img {
+	background-position: center;
+	width: 300px;
+}
+
+
+.img1 {
+	background: url('koala1.jpg');
+}
+
+.img2 {
+	background: url('koala2.jpg');
+}
+
+.img3 {
+	background: url('koala3.jpg');
+}
+
+.img4 {
+	background: url('koala4.jpg');
+}
