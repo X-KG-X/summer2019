@@ -24,6 +24,10 @@ ALTER USER 'root'@'localhost'
   BY 'root';
 
 
-
+//Export Data
+- Servers -> Export data
+- click database to export
+- * click 'Export to Self-Contained File', update directory
+- * click Include Create Schema
 
 
