@@ -1,0 +1,20 @@
+label {
+	display: block;
+	margin : 10px;
+}
+
+.gender_select label{
+	display: inline-block;
+}
+
+textarea {
+	display: block;
+}
+
+.submit {
+	display: block;
+}
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Registration Form</title>
+		<link rel="stylesheet" href="regform.css">
+	</head>
+
+	<body>
+		<form class="regform">
+			<label for="first_name">
+				First Name: <input type="text" id="first_name" name="first_name">
+			</label>
+			<label for="last_name">
+				Last Name: <input type="text" id="last_name" name="last_name">
+			</label>
+			<label for="email">
+				Email: <input type="email" id="email" name="email">
+			</label>
+			<label for="password">
+				Password: <input type="password" id="password" name="password">
+			</label>
+			<label for="password_confirm">
+				PW Confirm : <input type="password" id="password_confirm" name="password_confirm">
+			</label>
+			<label for="birthday">
+				Birthday : <input type="date" id="birthday" name="birthday">
+			</label>
+			<p class="gender_select">
+				<label for="male">
+					<input type="radio" id="male" name="gender" value="male">Male
+				</label>
+				<label for="female">
+					<input type="radio" id="female" name="gender" value="female">Female
+				</label>
+				<label for="other">
+					<input type="radio" id="other" name="gender" value="other">Other
+				</label>
+			</p>
+			A short description about yourself :
+			<textarea id="description" name="description"></textarea>
+			Favorite Language : 
+			<select id="favorite_lang" name="favorite_lang">
+
+				<option value="JS">JavaScript</option>
+				<option value="HTML">HTML</option>
+				<option value="CSS">CSS</option>
+			</select>
+
+			<input type="submit" value="Submit!" class="submit">
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

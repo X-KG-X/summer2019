@@ -61,17 +61,26 @@
 		<form>
 			<h2>Please take this short survey</h2>
 			<label for="email">Email:</label>
-			<input type="text" id="email" name="email"><br>
+			<input type="text" id="email" name="email" required><br>
 
-			<input type="radio" id="email_yes" name="email" value="yes">Yes, please send me lots of emails
-			<input type="radio" id="email_no" name="email" value="no">
-			No, please do not send me any emails
+			<label for="email_yes">
+				<input type="radio" id="email_yes" name="email" value="yes">Yes, please send me lots of emails
+			</label>
+			<label for="email_no">
+				<input type="radio" id="email_no" name="email" value="no">
+				No, please do not send me any emails
+			</label>
 
 			<h3>How did you hear about us?</h3>
-			<input type="checkbox" name="hear" value="facebook">Facebook<br>
-			<input type="checkbox" name="hear" value="newspaper">Newspaper<br>
-			<input type="checkbox" name="hear" value="referral">Referral<br>
-
+			<label for="facebook">
+				<input type="checkbox" id="facebook" name="hear" value="facebook">Facebook<br>
+			</label>
+			<label for="newspaper">
+				<input type="checkbox" id="newspaper" name="hear" value="newspaper">Newspaper<br>
+			</label>
+			<label for="referral">
+				<input type="checkbox" id="referral" name="hear" value="referral">Referral<br>
+			</label>
 			<input type="submit" value="Submit!!">
 		</form>
 
