@@ -1,0 +1,2 @@
+stacks = 3
+print('Coding Dojo' if stacks >= 3 else 'You are not coding dojo')

@@ -1,0 +1,46 @@
+Virtual Environments
+Objectives:
+Understand what virtual environments are and how they are useful
+Set up a virtual environment
+Know how to use a virtual environment
+You may have noticed that when we installed a package using pip, it was installed globally on our machine. While this is okay, if we're working on multiple projects, it might be hard to keep track of which projects are using which packages, or in other words, which projects have which dependencies. To keep this organized, Python uses virtual environments.
+
+In addition to specifying what packages we need, we can also specify which version of Python to use in a given environment. This allows us to have multiple versions of Python installed on our computer and then easily switch between versions when actually running and testing our code.
+
+In practice, because your projects will be larger, it's good to create virtual environments specific to a project. However, while you're here at the Dojo, you'll be creating dozens of projects in the next month that just have a few dependencies, so we'll just set up two environments, just to get some practice using them: in one, we'll install Flask, and in the other Django.
+
+Let's try it out! First, let's install the package on our computer that allows us to create virtual environments:
+
+-------------------------------------------------
+| Mac/Linux: | pip3 install virtualenv           
+-------------+-----------------------------------
+| Windows:   | pip install virtualenv     
+-------------------------------------------------
+Now we need a place to store these environments. Remember the my_environments folder we created in the first assignment? Let's store our environments there. In the terminal, navigate (cd) to the my_environments directory. Next, decide on a name for your environment (it can be whatever you'd like). In this example, we're naming our environment py3Env. Here's the command to create the virtual environment with that name:
+
+------------------------------------------------------------------
+| Mac/Linux: | virtualenv -p python3 py3Env                       
+-------------+----------------------------------------------------
+| Windows:   | virtualenv py3Env                
+------------------------------------------------------------------
+We should now see a new folder in our previously empty my_environments directory called py3Env.
+
+Activating a Virtual Environment
+The keyword for activating a virtual environment is source or call, depending on which OS and terminal we're using. We run this command and specify which environment to activate like so (the following assumes we are in the my_environments directory, with a virtual environment called py3Env):
+
+------------------------------------------------------------------
+| Mac/Linux: | source py3Env/bin/activate                         
+------------------------------------------------------------------
+| Windows command prompt : | call py3Env\Scripts\activate       
+------------------------------------------------------------------
+| Windows git bash : | source py3Env/Scripts/activate         
+------------------------------------------------------------------
+We know our virtual environment is active, and which virtual environment is active, when the command line changes to something like this:
+
+(py3Env) $
+If you want to check what packages are installed in a given environment, try running pip list with the environment active.
+
+Deactivating a Virtual Environment
+To deactivate a virtual environment, just type deactivate in the command line. Closing your terminal window will also deactivate your virtual environment.
+
+If these ideas are still a little bit fuzzy, here's a video to see these commands in action:

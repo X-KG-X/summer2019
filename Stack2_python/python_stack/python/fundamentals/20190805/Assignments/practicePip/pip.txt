@@ -1,0 +1,19 @@
+1. pip install Django==1.11.9 : install package : "Django" version : 1.11.9
+
+2. pip list : shows list of packages/versions installed in the current virtual environment
+
+3. deactivate : deactivate the current running virtual environment
+
+4. pip3 list : shows list of installed packages/versions on my machine (global)
+
+5.source py3Env/bin/activate : activate the virtual environment
+
+6. pip install Django==1.11.9 : this command tries to install Django, version 1.11.9, and the env says the requirement already satisfied.
+
+7. pip freeze : returns installed packages in requirements format.
+
+8.pip uninstall Django : uninstall package "Django"
+
+9.pip show Django : returns nothing as we uninstalled Django
+
+1. pip search Flask : search python packges Flask
